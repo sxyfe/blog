@@ -27,7 +27,7 @@ jobs:
       - name: Deploy Web
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets['blog-depoly-token'] }}
+          personal_token: ${{ secrets.blog-depoly-token }}
           external_repository: sxyfe/sxyfe.github.io
           publish_branch: master
           publish_dir: ./public
